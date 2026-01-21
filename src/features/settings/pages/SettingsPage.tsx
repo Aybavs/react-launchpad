@@ -66,7 +66,7 @@ export function SettingsPage() {
                   <Button
                     key={t}
                     size="sm"
-                    variant={theme === t ? 'primary' : 'outline'}
+                    variant={theme === t ? 'default' : 'outline'}
                     onClick={() => setTheme(t)}
                   >
                     {t.charAt(0).toUpperCase() + t.slice(1)}
@@ -82,14 +82,14 @@ export function SettingsPage() {
               <div className="flex gap-2">
                 <Button
                   size="sm"
-                  variant={i18n.language === 'en' ? 'primary' : 'outline'}
+                  variant={i18n.language === 'en' ? 'default' : 'outline'}
                   onClick={() => handleLanguageChange('en')}
                 >
                   English
                 </Button>
                 <Button
                   size="sm"
-                  variant={i18n.language === 'tr' ? 'primary' : 'outline'}
+                  variant={i18n.language === 'tr' ? 'default' : 'outline'}
                   onClick={() => handleLanguageChange('tr')}
                 >
                   Türkçe

@@ -58,7 +58,7 @@ export const WithFooter: Story = {
         <Button variant="outline" size="sm">
           Cancel
         </Button>
-        <Button variant="primary" size="sm">
+        <Button variant="default" size="sm">
           Save
         </Button>
       </CardFooter>

@@ -2,12 +2,14 @@ import { useMemo, useCallback } from 'react'
 
 import { clsx } from 'clsx'
 
-import { DataTable, Button, useModal, useToast } from '@/core/ui'
-import type { ColumnDef } from '@/core/ui'
+import { Button, useToast } from '@/core/ui'
+import { DataTable } from '@/core/ui/components/DataTable'
+import { useModal } from '@/core/ui/hooks/useModal'
 
 import { useDeleteUser } from '../api'
 
 import type { User } from '../types'
+import type { ColumnDef } from '@tanstack/react-table'
 
 interface UserTableProps {
   users: User[]

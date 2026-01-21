@@ -10,7 +10,7 @@ import {
 } from '@tanstack/react-table'
 import { clsx } from 'clsx'
 
-import { Skeleton } from '../Skeleton'
+import { Skeleton } from '../skeleton'
 
 import type { DataTableProps } from './types'
 import type { SortingState } from '@tanstack/react-table'
